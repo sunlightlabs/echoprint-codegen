@@ -3,7 +3,7 @@ CXX=g++
 CC=gcc
 #OPTFLAGS=-g -O0
 OPTFLAGS=-O3 -DBOOST_UBLAS_NDEBUG -DNDEBUG
-CXXFLAGS=-Wall -I/usr/local/include/boost-1_35 `taglib-config --cflags` -fPIC $(OPTFLAGS)
+CXXFLAGS=-Wall -I/home/blannon/boost/include/boost `taglib-config --cflags` -fPIC $(OPTFLAGS)
 CFLAGS=-Wall -fPIC $(OPTFLAGS)
 LDFLAGS=`taglib-config --libs` -lz -lpthread $(OPTFLAGS)
 
