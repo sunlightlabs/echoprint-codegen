@@ -32,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F2E013818ABCB2400C5E2A0 /* custom-config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "custom-config.xcconfig"; sourceTree = "<group>"; };
 		9AAF51A513B2557800099790 /* Whitening.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Whitening.cxx; path = ../Whitening.cxx; sourceTree = SOURCE_ROOT; };
 		9AAF51A613B2557800099790 /* Whitening.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Whitening.h; path = ../Whitening.h; sourceTree = SOURCE_ROOT; };
 		9AE5AA17139FB2620009FCD8 /* SubbandAnalysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SubbandAnalysis.h; path = ../SubbandAnalysis.h; sourceTree = SOURCE_ROOT; };
@@ -75,6 +76,7 @@
 		C8D4AD11137EE85F00CD506D = {
 			isa = PBXGroup;
 			children = (
+				2F2E013818ABCB2400C5E2A0 /* custom-config.xcconfig */,
 				C8D4AD70137EF68F00CD506D /* README.md */,
 				C8D4AD6F137EF5AC00CD506D /* echoprint-codegen-ios.xcconfig */,
 				C8D4AD21137EE85F00CD506D /* echoprint-codegen-ios */,
@@ -184,6 +186,8 @@
 /* Begin PBXProject section */
 		C8D4AD13137EE85F00CD506D /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = C8D4AD16137EE85F00CD506D /* Build configuration list for PBXProject "echoprint-codegen-ios" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -224,7 +228,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C8D4AD6F137EF5AC00CD506D /* echoprint-codegen-ios.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -241,7 +245,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C8D4AD6F137EF5AC00CD506D /* echoprint-codegen-ios.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -258,6 +262,7 @@
 				DSTROOT = /tmp/echoprint_codegen_ios.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "echoprint-codegen-ios/echoprint-codegen-ios-Prefix.pch";
+				GCC_VERSION = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -270,6 +275,7 @@
 				DSTROOT = /tmp/echoprint_codegen_ios.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "echoprint-codegen-ios/echoprint-codegen-ios-Prefix.pch";
+				GCC_VERSION = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
