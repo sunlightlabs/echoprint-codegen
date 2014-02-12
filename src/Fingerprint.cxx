@@ -107,7 +107,7 @@ uint Fingerprint::adaptiveOnsets(int ttarg, matrix_u&out, uint*&onset_counter_fo
     //  E is a sgram-like matrix of energies.
     const float *pE;
     int bands, frames, i, j, k;
-    int deadtime = 43;
+    int deadtime = 128;
     double H[SUBBANDS],taus[SUBBANDS], N[SUBBANDS];
     int contact[SUBBANDS], lcontact[SUBBANDS], tsince[SUBBANDS];
     double overfact = 1.1;  /* threshold rel. to actual peak */
